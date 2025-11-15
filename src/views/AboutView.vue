@@ -18,44 +18,24 @@ export default {
         },
         {
           id: 3,
-          name: "PHP",
-          imageUrl:
-            "https://cdn.iconscout.com/icon/free/png-256/free-php-2038871-1720084.png",
-          status: "Advanced",
-        },
-        {
-          id: 4,
           name: "Javascript",
           imageUrl:
             "https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png",
           status: "Advance",
         },
         {
-          id: 5,
-          name: "Laravel",
-          imageUrl: "https://cdn.worldvectorlogo.com/logos/laravel-2.svg",
-          status: "Advance",
-        },
-        {
-          id: 6,
-          name: "Codeigniter",
-          imageUrl:
-            "https://cdn-peanutsquare.b-cdn.net/wp-content/uploads/2022/11/codeigniter-logo.png",
-          status: "Intermediate",
-        },
-        {
-          id: 7,
+          id: 4,
           name: "VueJS",
           imageUrl:
             "https://cdn.iconscout.com/icon/free/png-256/free-vue-282497.png?f=webp",
           status: "Intermediate",
         },
         {
-          id: 8,
-          name: "AlpineJS",
+          id: 5,
+          name: "Element Plus",
           imageUrl:
-            "https://avatars.githubusercontent.com/u/59030169?s=200&v=4",
-          status: "Beginner",
+            "https://gd-hbimg.huaban.com/1fe5c3cdc469b0d6d54237f9310dcbf7064e31c63414-l3tBFk_fw1200",
+          status: "Advance",
         },
         {
           id: 9,
@@ -77,13 +57,6 @@ export default {
           imageUrl:
             "https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png",
           status: "Intermediate",
-        },
-        {
-          id: 12,
-          name: "ReactJS",
-          imageUrl:
-            "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
-          status: "Beginner",
         },
       ],
       tools: [
@@ -119,180 +92,186 @@ export default {
 };
 </script>
 <template>
-  <div
-    class="bg-[#1e1e1f] px-5 py-5 md:px-12 md:py-10 text-left border border-[#383838] rounded-3xl text-amber-50 mx-3 mb-5"
-  >
-    <article data-page="about">
-      <header>
-        <div
-          class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center"
-        >
-          About Me &nbsp;
+  <div>
+    <div
+      class="bg-[#1e1e1f] px-5 py-5 md:px-12 md:py-10 text-left border border-[#383838] rounded-3xl text-amber-50 mx-3 mb-5"
+    >
+      <article data-page="about">
+        <header>
           <div
-            class="h-[1px] w-32 bg-amber-200 md:w-96 aos-init aos-animate"
-            data-aos="zoom-in-left"
-            data-aos-duration="600"
-          ></div>
-        </div>
-      </header>
-
-      <section
-        class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center"
-      >
-        <div class="flex justify-center">
-          <img
-            class="w-9/12 rounded-full mb-3 fadein-up"
-            src="../assets/imgs/头像.jpeg"
-            alt="Foto"
-          />
-        </div>
-        <div class="md:w-7/12">
-          <p class="mb-3 md:mb-7 fadein-left fadeins-1">
-            &nbsp; &nbsp; &nbsp;
-            您好！我是努尔艾力・买买提，就读于北京邮电大学电子商务专业（预计
-            2026 年毕业），专注于
-            Web前端开发领域。在校期间，系统学习了电子商务网站开发、
-            数据库系统等课程，为前端技术打下理论基础；通过北邮社会实践交流网站项目（负责前端开发与交互），
-            熟练运用HTML、CSS、JavaScript 等核心技术，掌握 VUE
-            框架、WebPack构建工具， 实现了从需求分析到页面交付的全流程实践。
-          </p>
-          <p class="mb-3 fadein-left fadeins-2">
-            &nbsp; &nbsp; &nbsp; 此外，新媒体运营（独立运营公众号，撰写 15
-            篇原创推文，粉丝增长
-            400+）和校园活动策划（设计线上报名系统，效率提升
-            40%）的经历，锤炼了我的团队协作、创新思维与问题解决能力。我擅长将技术与用户体验结合，例如在项目中通过
-            Figma
-            优化原型设计，确保界面交互的易用性。作为共青团员，我具备强烈的责任感与执行力，期待以扎实的前端技能和积极的工作态度，为贵团队打造高效、美观的
-            Web 应用，助力业务发展。
-          </p>
-        </div>
-      </section>
-    </article>
-  </div>
-
-  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
-    <article data-page="about">
-      <header>
-        <div
-          class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center"
-        >
-          <div
-            class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"
-            data-aos="zoom-in-left"
-            data-aos-duration="600"
-          ></div>
-          &nbsp; Skills
-        </div>
-      </header>
-      <section>
-        <div>
-          <ul
-            class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5"
+            class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center"
           >
-            <li class="mr-2">
-              <button
-                class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{
-                  'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1,
-                }"
-                @click="activeTab = 1"
-              >
-                Tech Stack
-              </button>
-            </li>
-            <li class="mr-2">
-              <button
-                class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{
-                  'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2,
-                }"
-                @click="activeTab = 2"
-              >
-                Tools
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div v-show="activeTab === 1">
+            About Me &nbsp;
+            <div
+              class="h-[1px] w-32 bg-amber-200 md:w-96 aos-init aos-animate"
+              data-aos="zoom-in-left"
+              data-aos-duration="600"
+            ></div>
+          </div>
+        </header>
+
+        <section
+          class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-left md:items-center"
+        >
+          <div class="flex justify-center">
+            <img
+              class="w-9/12 rounded-full mb-3 fadein-up"
+              src="../assets/imgs/头像.jpeg"
+              alt="Foto"
+            />
+          </div>
+          <div class="md:w-7/12">
+            <p class="mb-3 md:mb-7 fadein-left fadeins-1">
+              &nbsp; &nbsp; &nbsp;
+              您好！我是努尔艾力・买买提，就读于北京邮电大学电子商务专业 2026
+              年毕业生，专注于Web前端开发领域。在校期间，系统学习了电子商务网站开发、数据库系统等课程，为前端技术打下理论基础；通过两端前端项目实战熟练运用HTML、CSS、JavaScript
+              等核心技术，掌握
+              VUE框架、Vite构建工具，实现了从需求分析到页面交付的全流程实践。
+            </p>
+            <p class="mb-3 fadein-left fadeins-2">
+              &nbsp; &nbsp; &nbsp; 此外，新媒体运营（独立运营公众号，撰写 15
+              篇原创推文，粉丝增长
+              400+）和校园活动策划（设计线上报名系统，效率提升
+              40%）的经历，锤炼了我的团队协作、创新思维与问题解决能力。我擅长将技术与用户体验结合，例如在项目中通过
+              Figma
+              优化原型设计，确保界面交互的易用性。作为共青团员，我具备强烈的责任感与执行力，期待以扎实的前端技能和积极的工作态度，为贵团队打造高效、美观的
+              Web 应用，助力业务发展。
+            </p>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
+      <article data-page="about">
+        <header>
           <div
-            class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
+            class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center"
           >
-            <div v-for="item in tech" :key="item.id">
-              <div
-                class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3"
-              >
-                <div
-                  class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in"
+            <div
+              class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"
+              data-aos="zoom-in-left"
+              data-aos-duration="600"
+            ></div>
+            &nbsp; Skills
+          </div>
+        </header>
+        <section>
+          <div>
+            <ul
+              class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5"
+            >
+              <li class="mr-2">
+                <button
+                  class="inline-block px-4 py-3 rounded-lg hover:text-white"
+                  :class="{
+                    'text-amber-200 bg-amber-200 bg-opacity-10':
+                      activeTab === 1,
+                  }"
+                  @click="activeTab = 1"
                 >
-                  <img
-                    alt="HTML"
-                    loading="lazy"
-                    width="32"
-                    height="32"
-                    decoding="async"
-                    data-nimg="1"
-                    class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
-                    :src="item.imageUrl"
-                    style="color: transparent"
-                  />
-                </div>
-                <div class="flex items-center text-sm md:text-base lg:text-lg">
+                  Tech Stack
+                </button>
+              </li>
+              <li class="mr-2">
+                <button
+                  class="inline-block px-4 py-3 rounded-lg hover:text-white"
+                  :class="{
+                    'text-amber-200 bg-amber-200 bg-opacity-10':
+                      activeTab === 2,
+                  }"
+                  @click="activeTab = 2"
+                >
+                  Tools
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div v-show="activeTab === 1">
+            <div
+              class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
+            >
+              <div v-for="item in tech" :key="item.id">
+                <div
+                  class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3"
+                >
                   <div
-                    class="tech font-medium text-secondary transition-all duration-300 translate-y-0"
+                    class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in"
                   >
-                    {{ item.name }}
+                    <img
+                      alt="HTML"
+                      loading="lazy"
+                      width="32"
+                      height="32"
+                      decoding="async"
+                      data-nimg="1"
+                      class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
+                      :src="item.imageUrl"
+                      style="color: transparent"
+                    />
                   </div>
                   <div
-                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm"
+                    class="flex items-center text-sm md:text-base lg:text-lg"
                   >
-                    {{ item.status }}
+                    <div
+                      class="tech font-medium text-secondary transition-all duration-300 translate-y-0"
+                    >
+                      {{ item.name }}
+                    </div>
+                    <div
+                      class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm"
+                    >
+                      {{ item.status }}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div v-show="activeTab === 2">
-          <div
-            class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
-          >
-            <div v-for="item in tools" :key="item.id">
-              <div
-                class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3"
-              >
+          <div v-show="activeTab === 2">
+            <div
+              class="grid grid-cols-2 gap-4 pb-32 md:grid-cols-3 md:gap-8 xl:grid-cols-4 xl:gap-10 2xl:gap-12"
+            >
+              <div v-for="item in tools" :key="item.id">
                 <div
-                  class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in"
+                  class="item-tech flex cursor-pointer items-center gap-2 rounded border border-amber-200 px-2 py-2 hover:bg-amber-200 hover:bg-opacity-10 md:gap-3 lg:px-3"
                 >
-                  <img
-                    alt="HTML"
-                    loading="lazy"
-                    width="32"
-                    height="32"
-                    decoding="async"
-                    data-nimg="1"
-                    class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
-                    :src="item.imageUrl"
-                    style="color: transparent"
-                  />
-                </div>
-                <div class="flex items-center text-sm md:text-base lg:text-lg">
                   <div
-                    class="tech font-medium text-secondary transition-all duration-300 translate-y-0"
+                    class="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 zoom-in"
                   >
-                    {{ item.name }}
+                    <img
+                      alt="HTML"
+                      loading="lazy"
+                      width="32"
+                      height="32"
+                      decoding="async"
+                      data-nimg="1"
+                      class="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[85%] lg:w-[85%]"
+                      :src="item.imageUrl"
+                      style="color: transparent"
+                    />
                   </div>
                   <div
-                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm"
+                    class="flex items-center text-sm md:text-base lg:text-lg"
                   >
-                    {{ item.status }}
+                    <div
+                      class="tech font-medium text-secondary transition-all duration-300 translate-y-0"
+                    >
+                      {{ item.name }}
+                    </div>
+                    <div
+                      class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm"
+                    >
+                      {{ item.status }}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </article>
+        </section>
+      </article>
+    </div>
   </div>
 </template>
 
