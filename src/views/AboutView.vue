@@ -8,55 +8,72 @@ export default {
           id: 1,
           name: "HTML",
           imageUrl: "https://cdn-icons-png.flaticon.com/512/1051/1051277.png",
-          status: "Advanced",
+          status: "精通",
         },
         {
           id: 2,
           name: "CSS",
           imageUrl: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-          status: "Advanced",
+          status: "精通",
         },
         {
           id: 3,
           name: "Javascript",
           imageUrl:
             "https://cdn.icon-icons.com/icons2/2415/PNG/512/javascript_original_logo_icon_146455.png",
-          status: "Advance",
+          status: "精通",
         },
         {
           id: 4,
           name: "VueJS",
           imageUrl:
             "https://cdn.iconscout.com/icon/free/png-256/free-vue-282497.png?f=webp",
-          status: "Intermediate",
+          status: "熟练",
         },
         {
           id: 5,
-          name: "Element Plus",
-          imageUrl:
-            "https://gd-hbimg.huaban.com/1fe5c3cdc469b0d6d54237f9310dcbf7064e31c63414-l3tBFk_fw1200",
-          status: "Advance",
+          name: "Vite",
+          imageUrl: require("@/assets/imgs/about/vite.png"),
+          status: "熟练",
         },
         {
-          id: 9,
+          id: 6,
+          name: "Element Plus",
+          imageUrl: require("@/assets/imgs/about/element-plus.png"),
+          status: "精通",
+        },
+        {
+          id: 7,
           name: "NodeJS",
           imageUrl:
             "https://cdn.iconscout.com/icon/free/png-256/free-node-js-1174925.png",
-          status: "Beginner",
+          status: "熟悉",
         },
         {
-          id: 10,
+          id: 8,
           name: "Tailwind",
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-          status: "Advance",
+          status: "熟练",
         },
         {
-          id: 11,
+          id: 9,
           name: "Bootstrap",
           imageUrl:
             "https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png",
-          status: "Intermediate",
+          status: "精通",
+        },
+        {
+          id: 10,
+          name: "uni-app",
+          imageUrl: require("@/assets/imgs/about/uni_app.png"),
+          status: "熟悉",
+        },
+        {
+          id: 11,
+          name: "Python",
+          imageUrl: require("@/assets/imgs/about/python.png"),
+          status: "基础",
         },
       ],
       tools: [
@@ -65,26 +82,74 @@ export default {
           name: "Git",
           imageUrl:
             "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
-          status: "Version Control",
+          status: "版本管理",
         },
         {
           id: 2,
           name: "GitHub",
           imageUrl: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-          status: "Git Hosting",
+          status: "Git 仓库管理",
         },
         {
           id: 3,
-          name: "NPM",
-          imageUrl:
-            "https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png",
-          status: "Package Manager",
+          name: "Gitee",
+          imageUrl: require("@/assets/imgs/about/gitee.png"),
+          status: "Gitee 仓库管理",
         },
         {
           id: 4,
+          name: "NPM",
+          imageUrl:
+            "https://cdn.iconscout.com/icon/free/png-256/free-npm-3-1175132.png",
+          status: "包管理",
+        },
+        {
+          id: 5,
           name: "MySQL",
           imageUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968313.png",
-          status: "Database",
+          status: "数据库",
+        },
+        {
+          id: 6,
+          name: "原型设计",
+          imageUrl: require("@/assets/imgs/about/md.png"),
+          status: "设计工具",
+        },
+        {
+          id: 7,
+          name: "WPS",
+          imageUrl: require("@/assets/imgs/about/wps.png"),
+          status: "办公软件",
+        },
+        {
+          id: 8,
+          name: "Xmind",
+          imageUrl: require("@/assets/imgs/about/xmind.png"),
+          status: "思维导图",
+        },
+        {
+          id: 9,
+          name: "Visio",
+          imageUrl: require("@/assets/imgs/about/visio.png"),
+          status: "绘图工具",
+        },
+        {
+          id: 10,
+          name: "新媒体设计",
+          imageUrl: require("@/assets/imgs/about/gzh.png"),
+          status: "微信公众号",
+        },
+        {
+          id: 11,
+          name: "PhotoShop",
+          imageUrl: require("@/assets/imgs/about/ps.png"),
+          status: "图片处理",
+        },
+        {
+          id: 12,
+          name: "剪映",
+          imageUrl: require("@/assets/imgs/about/jy.png"),
+          status: "视频剪辑",
         },
       ],
     };
@@ -123,19 +188,19 @@ export default {
           <div class="md:w-7/12">
             <p class="mb-3 md:mb-7 fadein-left fadeins-1">
               &nbsp; &nbsp; &nbsp;
-              您好！我是努尔艾力・买买提，就读于北京邮电大学电子商务专业 2026
-              年毕业生，专注于Web前端开发领域。在校期间，系统学习了电子商务网站开发、数据库系统等课程，为前端技术打下理论基础；通过两端前端项目实战熟练运用HTML、CSS、JavaScript
-              等核心技术，掌握
-              VUE框架、Vite构建工具，实现了从需求分析到页面交付的全流程实践。
+              您好！我是努尔艾力・买买提，就读于北京邮电大学电子商务专业
+              2026年毕业生，专注于Web前端开发领域。
+              在校期间，系统学习了电子商务网站开发、数据库系统、Python数据分析、PS课程、移动应用开发、计算机实习课、
+              运筹学、电子商务物流管理等课程，为前端技术打下理论基础；通过一段实习和两段前端项目实战，熟练运用HTML、CSS、
+              JavaScript等核心技术，掌握了VUE框架、Vite构建工具，实现了从需求分析到页面交付的全流程实践。
             </p>
             <p class="mb-3 fadein-left fadeins-2">
-              &nbsp; &nbsp; &nbsp; 此外，新媒体运营（独立运营公众号，撰写 15
-              篇原创推文，粉丝增长
-              400+）和校园活动策划（设计线上报名系统，效率提升
-              40%）的经历，锤炼了我的团队协作、创新思维与问题解决能力。我擅长将技术与用户体验结合，例如在项目中通过
-              Figma
-              优化原型设计，确保界面交互的易用性。作为共青团员，我具备强烈的责任感与执行力，期待以扎实的前端技能和积极的工作态度，为贵团队打造高效、美观的
-              Web 应用，助力业务发展。
+              &nbsp; &nbsp; &nbsp; 此外，新媒体运营（独立运营公众号，撰写 20+
+              篇原创推文，粉丝增长1000+）
+              和校园活动策划（设计线上报名系统，效率提升40%）的经历，锤炼了我的团队协作、创新思维与问题解决能力。
+              我在大学期间，通过了英语四六级考试，两次获得了校级三等奖学金，取得了全国计算机等级考试二级证书（Web程序设计）、
+              在北京邮电大学2023年暑假社会实践中被评为先进个人以及斩获最佳报告奖，除此之外，我还获得了知识竞赛荣誉证书、
+              勤工助学先进个人等荣誉，并且参与了全国大学生职业规划大赛。
             </p>
           </div>
         </section>
@@ -170,7 +235,7 @@ export default {
                   }"
                   @click="activeTab = 1"
                 >
-                  Tech Stack
+                  技术栈
                 </button>
               </li>
               <li class="mr-2">
@@ -182,7 +247,7 @@ export default {
                   }"
                   @click="activeTab = 2"
                 >
-                  Tools
+                  工具链
                 </button>
               </li>
             </ul>

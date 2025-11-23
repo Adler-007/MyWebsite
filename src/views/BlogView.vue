@@ -3,7 +3,7 @@
     <div class="flex flex-col-reverse md:flex-row relative">
       <div class="w-full md:w-2/3">
         <div class="flex flex-col gap-4 md:px-20 fade-zoom-up">
-          <article v-for="article in articles" :key="article.id">
+          <article v-for="article in currentArticles" :key="article.id">
             <router-link
               :to="`/read/${article.slug}/${article.id}`"
               class="flex w-full bg-[#1e1e1f] border-[#383838] rounded-xl text-left text-white p-5 md:py-7 md:px-8 cursor-pointer hover:bg-[#282828] items-center"
@@ -45,21 +45,35 @@
           <div
             class="bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300 text-transparent"
           >
-            Let's share experiences, stories, and knowledge together.
+            让我们分享一些有趣的故事、心得和经验吧~
           </div>
           <div
             class="h-[1px] mt-7 mb-7 w-20 bg-amber-200 aos-init aos-animate mr-2"
           ></div>
           <div class="hidden md:block">
-            <div class="text-white text-md font-semibold">Topics</div>
+            <div class="text-white text-md font-semibold">主题</div>
             <div class="mt-3 flex flex-wrap gap-1">
               <span
-                class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer"
-                >NodeJS</span
+                @click="activeTab = 'internship'"
+                :class="{
+                  'bg-amber-200 bg-opacity-20 text-amber-200 border border-amber-200':
+                    activeTab === 'internship',
+                  'bg-[#1e1e1f] hover:bg-white/20 text-white':
+                    activeTab !== 'internship',
+                }"
+                class="py-2 px-3 rounded-2xl text-xs cursor-pointer transition-all duration-200"
+                >实习/项目</span
               >
               <span
-                class="py-2 px-3 rounded-2xl bg-[#1e1e1f] hover:bg-white/20 text-white text-xs cursor-pointer"
-                >Technology</span
+                @click="activeTab = 'campus'"
+                :class="{
+                  'bg-amber-200 bg-opacity-20 text-amber-200 border border-amber-200':
+                    activeTab === 'campus',
+                  'bg-[#1e1e1f] hover:bg-white/20 text-white':
+                    activeTab !== 'campus',
+                }"
+                class="py-2 px-3 rounded-2xl text-xs cursor-pointer transition-all duration-200"
+                >校园经历</span
               >
             </div>
           </div>
@@ -73,7 +87,8 @@
 export default {
   data() {
     return {
-      articles: [
+      activeTab: "internship", // 默认选中"实习/项目"
+      internshipArticles: [
         {
           id: 1,
           title: "北京华琦远航国际咨询有限公司 | 前端开发工程师",
@@ -102,7 +117,43 @@ export default {
             "https://pic.rmb.bdstatic.com/bjh/news/4278247a64799826ad4165b74408f649.png",
         },
       ],
+      campusArticles: [
+        {
+          id: 101,
+          title: "校级部门宣传部 | 新媒体部负责人",
+          desc: "独立运营部门公众号,撰写15篇原创推文,单篇最高阅读量2000+,带动粉丝增长400+;设计比赛奖状(PS),多次负责活动场地的拍摄,获得老师和同学的好评;志愿服务时常80+,获得过3次以上的志愿者奖状。",
+          date: "2024-05-01 至 2026-05-31",
+          slug: "buaa-student-union-media",
+          image:
+            "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&h=400&q=80",
+        },
+        {
+          id: 102,
+          title: "班级干部 | 文体委员",
+          desc: "参与统筹策划多场院级活动,包括运动会、迎新晚会等,平均参与人数100+,活动满意度达92%;设计线上报名系统(Excel+问卷星),将报名效率提升40%,节省人工核对时间。",
+          date: "2022-09-01 至 2026-05-31",
+          slug: "campus-event-registration",
+          image:
+            "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&h=400&q=80",
+        },
+        {
+          id: 103,
+          title: "暑期社会实践 | 团队负责人",
+          desc: "此项目以“寻脉中华传统 根植文化自信“为主题,旨在提升个人文化素养、增强文化自信,我在项目中负责团队管理、把控整体节奏、编写相应资料,项目获得了最佳报告奖。",
+          date: "2023-06-01 至 2023-09-30",
+          slug: "ecommerce-course-project",
+          image:
+            "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&h=400&q=80",
+        },
+      ],
     };
+  },
+  computed: {
+    currentArticles() {
+      return this.activeTab === "internship"
+        ? this.internshipArticles
+        : this.campusArticles;
+    },
   },
 };
 </script>
@@ -110,6 +161,7 @@ export default {
 <style scoped>
 .paraf {
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
