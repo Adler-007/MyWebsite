@@ -15,14 +15,7 @@
               >返回首页</span
             >
           </button>
-          <div class="flex md:order-2 fadein-bot">
-            <!-- <a href="https://github.com/rakha-elctrnx"
-            ><img
-              class="w-9 rounded-full"
-              src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png"
-              alt="github"
-          /></a> -->
-          </div>
+          <div class="flex md:order-2 fadein-bot"></div>
           <div
             class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"
             id="mobile-menu-3"
